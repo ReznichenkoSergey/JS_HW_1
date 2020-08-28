@@ -1,3 +1,5 @@
+//#1'
+
 var myNum = 10;
 console.log(myNum);
 
@@ -16,8 +18,12 @@ var myObj = {
 }
 console.log(myObj);
 
+//#2
+
 var decimal2 = myNum.toFixed(2);
 console.log(decimal2);
+
+//#3
 
 var i = 10;
 console.log(i);
@@ -25,6 +31,8 @@ console.log(++i);
 console.log(--i);
 console.log(i--);
 console.log(i++);
+
+//#4
 
 var myTest = 20;
 console.log(myTest);
@@ -39,6 +47,8 @@ console.log(myTest);
 myTest %= myNum;
 console.log(myTest);
 
+//#5
+
 console.log(Math.PI);
 var myRound = 89.279;
 console.log(Math.round(myRound));
@@ -47,19 +57,26 @@ console.log(myRandom);
 var myPow = Math.pow(3, 5);
 console.log(myPow);
 
+//#6
+
+var tempValue = 'Мама мыла раму, рама мыла маму';
 var strObj = {
-    str: '',
-    length: 0
+    str: tempValue,
+    length: tempValue.length
 };
-strObj.str = 'Мама мыла раму, рама мыла маму';
-strObj.length = strObj.str.length;
 console.log(strObj);
+
+//#7
 
 var isRamaPos = strObj.str.indexOf('рама');
 console.log(isRamaPos);
 
+//#8
+
 var strReplace = strObj.str.replace('Мама мыла раму, рама мыла маму', 'Мама моет раму, Рама держит маму');
 console.log(strReplace);
+
+//#9
 
 var strValue = 'Строка для преобразования';
 console.log(strValue.toUpperCase());
