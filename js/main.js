@@ -49,9 +49,10 @@ console.log(myTest);
 
 //#5
 
-console.log(Math.PI);
-var myRound = 89.279;
-console.log(Math.round(myRound));
+var myPi = Math.PI;
+console.log(myPi);
+var myRound = Math.round(89.279);
+console.log(myRound);
 var myRandom = Math.random() * 10;
 console.log(myRandom);
 var myPow = Math.pow(3, 5);
@@ -59,11 +60,12 @@ console.log(myPow);
 
 //#6
 
-var tempValue = 'Мама мыла раму, рама мыла маму';
 var strObj = {
-    str: tempValue,
-    length: tempValue.length
+    str: "",
+    length: 0
 };
+strObj.str = 'Мама мыла раму, рама мыла маму';
+strObj.length = strObj.str.length;
 console.log(strObj);
 
 //#7
